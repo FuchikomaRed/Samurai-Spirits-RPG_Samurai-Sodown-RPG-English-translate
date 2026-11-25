@@ -1,0 +1,106 @@
+Samurai Shodown RPG (Shinsetsu Samurai Spirits: Bushidou Retsuden) — English translation
+
+Unofficial English translation of 真説サムライスピリッツ 武士道烈伝 (PlayStation, SLPS-00814, Japan, SNK 1997).
+
+Patch version: v1.0 · Date: 2026-11-25
+
+This patch is applied to the ORIGINAL JAPANESE game. It does not need, and does not work on, the Spanish translation.
+Before and after
+
+In game
+
+What's included
+
+The whole script: prologues of the eight heroes, both stories (Weeping Flower and Evil Heaven), each character's short stories, endings and the special "This is the shop" program.
+Menus, battle, techniques, items, equipment, shops, place and enemy names.
+System and memory card messages.
+Redrawn graphic text: title logo ("SAMURAI SHODOWN — The true legend of Bushido"), character and story selection, shop signs, battle buttons and gauges, "One moment..." and the "Cut!" brush caption.
+Distinct character voices: American English for most of the cast, British English for Ukyo, Charlotte's French, Cham Cham and Tam Tam's pidgin, Galford's CAPS, Earthquake's "GF", Gen-an's "ke"…
+What you need
+
+Your own copy of the game. It is not included.
+Check that your image matches the Redump dump:
+File	SHA-1	CRC32
+Shinsetsu Samurai Spirits - Bushidou Retsuden (Japan) (Track 1).bin	7f1f66f75189e1be3e5909330a7d0a4a2863f9e6	207309bc
+Shinsetsu Samurai Spirits - Bushidou Retsuden (Japan) (Track 2).bin	bdf431028e61f3edd9b507bb6756c1c0f87ae95f	7023155b
+Shinsetsu Samurai Spirits - Bushidou Retsuden (Japan) (Track 3).bin	3b60e5eaaedb0e2e0247be85244782b8be597cf4	a1fd605a
+Shinsetsu Samurai Spirits - Bushidou Retsuden (Japan) (Track 4).bin	b3cc95636253c271ee55dcabeff8d6ea50cd84b8	b8b1eebd
+The patch only changes track 1 (data). Audio tracks are copied as they are.
+If your copy is a single .bin with every track, that's fine: the patcher detects it.
+Installation
+
+Windows
+
+Download and unzip the latest file from Releases.
+Copy your game's .cue and .bin files into the parche folder.
+Double-click Apply_on_Windows.bat (needs Python 3).
+… (EN).bin and … (EN).cue will be created in the same folder.
+Manual alternative: open Delta Patcher, choose your (Track 1).bin, the .bps file and click Apply patch. Keep the original (Track 2–4).bin files next to the .cue.
+
+macOS
+
+Download and unzip the latest file from Releases.
+Copy your game's .cue and .bin files into the parche folder.
+Double-click Apply_on_Mac.command.
+If macOS blocks it: right-click → Open → Open.
+If you don't have Python 3, the script tells you how to install it.
+… (EN).bin and … (EN).cue will be created.
+Terminal alternative (macOS):
+
+python3 apply_translation.py "/full/path/to/Shinsetsu Samurai Spirits - Bushidou Retsuden (Japan).cue"
+Linux
+
+python3 apply_translation.py "/full/path/to/Shinsetsu Samurai Spirits - Bushidou Retsuden (Japan).cue"
+Expected result (translated data track): SHA-1 6ac284e3c3551762bb2cc76ac9152633db39b8ea, CRC32 b8f8b61c. The patcher checks it automatically.
+
+How to play
+
+Tested on RetroArch with PCSX ReARMed (BIOS SCPH-5500). Load the (EN).cue file. Enable the memory card so you can save.
+
+Translation decisions
+
+Item	Decision	Reason
+Title logo	"SAMURAI SHODOWN — The true legend of Bushido", redrawn	The series' Western name
+Character names	Official Western names of the series (Haohmaru, Nakoruru, Galford, Ukyo, Genjuro, Cham Cham…)	Project preference
+Ukyo's dialogue	British English	He is extremely polite and refined
+Charlotte's French words	Kept	Part of her identity
+Techniques with Japanese names	Romanized ("Kogetsuzan", "Tenha Danku Retsuzan")	As in the Western releases
+Battle buttons	ATK · TEC · RUN · SCT · ITM · DEF · ANN · FRM	Each box fits 3 letters
+Rage gauge	IRE	"RAGE" does not fit in 13 pixels
+Item names in shop lists	Abbreviated to 12 letters ("Pnts.", "Sndls.", "Brclt.")	List width
+Intro card, title menu, ADJUST SCREEN	Kept	Already in English
+Opening video (calligraphy 斬れ / 死…)	Kept in Japanese	Text burned into the video
+End credits	Kept	Already in English
+SNK・フジテレビ・ASATSU	Kept	Company credits
+Save title in the memory card manager	Kept in Japanese	Shown by the console BIOS
+Full glossary: docs/glossary_v1.0.csv · Character voices: docs/style_guide.md · Decisions: docs/translation_decisions.md
+
+The English text was translated mainly from the finished Spanish translation by the same author, checking the Japanese original whenever needed.
+
+Known issues
+
+The opening video keeps its Japanese captions.
+Save files made with other versions of the game may show the place name in another language on the save screen until you save again.
+This is a first release: the game is very long and could not be played through entirely. If you find untranslated or cut-off text or a typo, please report it (see below).
+How to report a bug
+
+Open an issue with the "Report a bug" template (docs/report_bug.md) and include:
+
+Patch version and emulator/console, with version and core.
+Where it happens: story, character, screen, what you were doing.
+What you expected and what you saw: cut-off text, untranslated text, typo, crash, etc.
+A screenshot and, if possible, a save or RetroArch state just before the problem.
+For crashes: does it also happen with the original game?
+Typos and style suggestions are welcome too.
+
+Credits
+
+Translation, tools and testing: FuchikomaRed
+Fonts: Kaushan Script (SIL Open Font License) for the brush lettering; custom pixel fonts.
+Legal notice
+
+Non-profit fan project, not affiliated with SNK, Fuji Television or ASATSU. No copyrighted content is distributed: only binary differences. You need your own legal copy of the game.
+
+Version history
+
+Versión en español: busca la traducción al español del mismo autor (Shinsetsu Samurai Spirits — Traducción al español).
